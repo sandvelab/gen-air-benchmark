@@ -44,8 +44,7 @@ python3 gen_airr_bm/pipelines/generic_pipeline.py configs/dummy_pipelines/experi
 .
 ├── adhoc_analysis/      # Code for running adhoc analysis not part of the core pipeline
 ├── configs/             # Config files including specification for all analyses run
-├── data/                # Dummy data for running the dummy pipeline and hyperparameter values explore in tuning. (see "Data availability" section for full data sets used in the study)
-├── exploratory_analysis/  # <- delete??
+├── data/                # Dummy data for running the dummy pipeline
 ├── gen_airr_bm/         # Core, data generation, pipeline, training, analysis, and evaluation code
 └── requirements.txt     # Listed packages for reproducible environment. 
 ```
