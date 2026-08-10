@@ -31,40 +31,40 @@ models:
       n_subset_samples: 100
 analyses:
     - name: "memorization"
-      model_names: [ "pwm", "vae" ]
+      model_names: [ "pwm", "vae", "sonnia", "lstm" ]
       default_model_name: "humanTRB"
       reference_data: [ "train", "test" ]
       n_subsets: 10
       allowed_mismatches: 1
       indels: True
       subfolder_name: "all dummy models dist 1"
-      receptor_type: "TCR"
+      receptor_type: "BCR UMI"
     - name: "reduced_dimensionality"
-      model_names: [ "pwm", "vae" ]
+      model_names: [ "pwm", "vae", "sonnia", "lstm" ]
       default_model_name: "humanTRB"
       reference_data: [ "train", "test" ]
       n_subsets: 6
       subfolder_name: "dummy models"
-      receptor_type: "TCR"
+      receptor_type: "BCR UMI"
     - name: "diversity"
-      model_names: [ "pwm", "vae" ]
+      model_names: [ "pwm", "vae", "sonnia", "lstm" ]
       default_model_name: "humanTRB"
       reference_data: [ "train", "test" ]
       n_subsets: 10
       subfolder_name: "dummy models"
-      receptor_type: "TCR"
+      receptor_type: "BCR UMI"
     - name: "phenotype"
       model_names: ["pwm"]
       default_model_name: "humanTRB"
       subfolder_name: "pwm"
-      receptor_type: "TCR"
+      receptor_type: "BCR UMI"
       allowed_mismatches: 0
       indels: False
     - name: "phenotype"
       model_names: ["sonnia"]
       default_model_name: "humanTRB"
       subfolder_name: "sonnia"
-      receptor_type: "TCR"
+      receptor_type: "BCR UMI"
       allowed_mismatches: 0
       indels: False
     - name: "phenotype"
@@ -75,24 +75,15 @@ analyses:
       allowed_mismatches: 0
       indels: False
     - name: "network"
-      model_names: [ "pwm", "vae" ]
+      model_names: [ "pwm", "vae", "sonnia", "lstm" ]
       default_model_name: "humanTRB"
       reference_data: [ "train", "test" ]
       n_subsets: 10
       allowed_mismatches: 1
       subfolder_name: "dummy models"
-      receptor_type: "TCR"
-    - name: "precision_recall"
-      model_names: [ "vae" ]
-      default_model_name: "humanTRB"
-      reference_data: [ "train", "test" ]
-      n_subsets: 1
-      allowed_mismatches: 1
-      indels: True
-      subfolder_name: "all dummy models dist 1"
-      receptor_type: "TCR"
+      receptor_type: "BCR UMI"
     - name: "innovation_umi"
-      model_names: [ "vae" ]
+      model_names: [ "pwm", "vae", "sonnia", "lstm" ]
       default_model_name: "humanIGH"
       n_subsets: 1
       allowed_mismatches: 0
@@ -107,7 +98,7 @@ analyses:
       indels: False
       receptor_type: "BCR UMI"
     - name: "clone_frequencies"
-      model_names: [ "vae" ]
+      model_names: [ "pwm", "vae", "sonnia", "lstm" ]
       default_model_name: "humanIGH"
       reference_data: [ "train", "test" ]
       n_subsets: 10
