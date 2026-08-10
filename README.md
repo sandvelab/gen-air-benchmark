@@ -35,7 +35,7 @@ pip install -e .
 ## Running dummy example
 
 ```bash
-python3 gen_airr_bm/pipelines/generic_pipeline.py configs/dummy_pipelines/experimental_1.yaml
+python3 gen_airr_bm/pipelines/generic_pipeline.py configs/dummy_pipelines/experimental_1.yaml --no_parallel
 ```
 
 ## Repository structure
@@ -43,7 +43,7 @@ python3 gen_airr_bm/pipelines/generic_pipeline.py configs/dummy_pipelines/experi
 ```
 .
 ├── adhoc_analysis/      # Code for running adhoc analysis not part of the core pipeline
-├── configs/             # Config files including specification for all analyses run
+├── configs/             # Config files containing specification for all analyses run
 ├── data/                # Dummy data for running the dummy pipeline
 ├── gen_airr_bm/         # Core, data generation, pipeline, training, analysis, and evaluation code
 └── requirements.txt     # Listed packages for reproducible environment. 
